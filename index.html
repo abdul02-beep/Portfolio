@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullahi Omar - Graphic Designer & Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    
+</head>
+<body class="bg-light text-dark">
+    
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary font-montserrat">ABDULLAHI<span class="text-dark">.OMAR</span></a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link font-medium">Home</a>
+                <a href="#about" class="nav-link font-medium">About</a>
+                <a href="#skills" class="nav-link font-medium">Skills</a>
+                <a href="#experience" class="nav-link font-medium">Experience</a>
+                <a href="#education" class="nav-link font-medium">Education</a>
+                <a href="#contact" class="nav-link font-medium">Contact</a>
+            </div>
+            
+            <button id="mobile-menu-btn" class="md:hidden text-dark focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full border-t">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#home" class="py-2 font-medium">Home</a>
+                <a href="#about" class="py-2 font-medium">About</a>
+                <a href="#skills" class="py-2 font-medium">Skills</a>
+                <a href="#experience" class="py-2 font-medium">Experience</a>
+                <a href="#education" class="py-2 font-medium">Education</a>
+                <a href="#contact" class="py-2 font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-montserrat">
+                    Hi, I'm <span class="text-primary">Abdullahi Omar</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl font-medium text-gray-600 mb-6">
+                    Graphic Designer & Full Stack Development Student
+                </h2>
+                <p class="text-gray-600 mb-8 max-w-lg">
+                    A motivated and adaptable young professional with a passion for technology, 
+                    design, and social engagement. Currently expanding my skills in full stack development.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="gradient-bg text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition duration-300">
+                        Get In Touch
+                    </a>
+                    <a href="#skills" class="border-2 border-primary text-primary px-6 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition duration-300">
+                        View My Skills
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-xl">
+                        <img src="media/profile.JPG" alt="Abdullahi Omar" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="absolute -bottom-4 -right-4 bg-white p-3 rounded-full shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="w-10 h-10 text-primary fill-current">
+                            <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-montserrat">About Me</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mt-2"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    I'm a motivated and adaptable young professional born in Norway and currently 24 years old. 
+                    I have a strong interest in technology, healthcare, and social engagement. With a background 
+                    in social media, graphic design, and video editing, as well as ongoing studies in software 
+                    development, I am eager to grow in both IT and health-related fields.
+                </p>
+                <p class="text-gray-700 mb-8 leading-relaxed">
+                    I am a dedicated team player with excellent communication skills, always open to learning 
+                    and contributing to meaningful projects. My multilingual abilities in English, Arabic, 
+                    Norwegian, and Swahili allow me to connect with diverse communities and clients.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium">Location</h3>
+                            <p class="text-gray-600">Tevlingveien 11B , Oslo, Norway</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-envelope text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium">Email</h3>
+                            <p class="text-gray-600">Abdulsaafi1000@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-phone text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium">Phone</h3>
+                            <p class="text-gray-600">+47 46 399 202</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                            <i class="fas fa-language text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium">Languages</h3>
+                            <p class="text-gray-600">English, Arabic, Norwegian, Swahili, Somali.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#0077B5] flex items-center justify-center text-white hover:opacity-80 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#1DA1F2] flex items-center justify-center text-white hover:opacity-80 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#E4405F] flex items-center justify-center text-white hover:opacity-80 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#333333] flex items-center justify-center text-white hover:opacity-80 transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-montserrat">My Skills</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mt-2"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Social Media Management -->
+                <div class="skill-card bg-white rounded-xl shadow-lg p-6 border-t-4 border-blue-500">
+                    <div class="w-16 h-16 rounded-lg gradient-bg flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-hashtag text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Social Media Management</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Content creation and publishing strategy
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Engagement strategies to increase reach
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Data-driven approach to track performance
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Graphic Design -->
+                <div class="skill-card bg-white rounded-xl shadow-lg p-6 border-t-4 border-purple-500">
+                    <div class="w-16 h-16 rounded-lg gradient-bg flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-palette text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Graphic Design</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Adobe Photoshop, Illustrator, and Canva
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Designing logos and marketing materials
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Color theory and visual aesthetics
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Video Editing -->
+                <div class="skill-card bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500">
+                    <div class="w-16 h-16 rounded-lg gradient-bg flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-video text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Video Editing</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Adobe Premiere Pro and CapCut
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Creating promotional and storytelling videos
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Transitions, effects, and sound enhancement
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Development Skills -->
+            <div class="mt-12">
+                <h3 class="text-xl font-semibold mb-6 text-center">Development Skills</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+                            <i class="fab fa-html5 text-3xl text-orange-500"></i>
+                        </div>
+                        <h4 class="font-medium">HTML</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                            <div class="bg-orange-500 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+                            <i class="fab fa-css3-alt text-3xl text-blue-500"></i>
+                        </div>
+                        <h4 class="font-medium">CSS</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+                            <i class="fab fa-js text-3xl text-yellow-500"></i>
+                        </div>
+                        <h4 class="font-medium">JavaScript</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                            <div class="bg-yellow-500 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow text-center">
+                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+                            <i class="fab fa-python text-3xl text-blue-700"></i>
+                        </div>
+                        <h4 class="font-medium">Python</h4>
+                        <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                            <div class="bg-blue-700 h-2 rounded-full" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-montserrat">Work Experience</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mt-2"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Environmental Worker -->
+                    <div class="timeline-item pl-12 pb-8">
+                        <div class="timeline-dot absolute left-0 top-0 w-10 h-10 rounded-full gradient-bg flex items-center justify-center">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex flex-wrap justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">Environmental Worker (Night Guard)</h3>
+                                <span class="text-sm bg-blue-100 text-blue-800 py-1 px-3 rounded-full">Feb 2024 - Present</span>
+                            </div>
+                            <h4 class="text-gray-600 mb-3">EOS Utvikling</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                    <span>Working as an on-call night-shift environmental worker for 9 months</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                    <span>Assisting residents diagnosed with autism and epilepsy</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                    <span>Communicating with some residents using partial sign language</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Kindergarten Assistant -->
+                    <div class="timeline-item pl-12 pb-8">
+                        <div class="timeline-dot absolute left-0 top-0 w-10 h-10 rounded-full gradient-bg flex items-center justify-center">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex flex-wrap justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">Kindergarten Assistant</h3>
+                                <span class="text-sm bg-blue-100 text-blue-800 py-1 px-3 rounded-full">Mar - Jun 2024</span>
+                            </div>
+                            <h4 class="text-gray-600 mb-3">Uwork</h4>
+                            <p class="text-gray-700">Worked as a substitute kindergarten assistant through Uwork.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Survey Interviewer -->
+                    <div class="timeline-item pl-12 pb-8">
+                        <div class="timeline-dot absolute left-0 top-0 w-10 h-10 rounded-full gradient-bg flex items-center justify-center">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex flex-wrap justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">Survey Interviewer</h3>
+                                <span class="text-sm bg-blue-100 text-blue-800 py-1 px-3 rounded-full">Feb - Apr 2024</span>
+                            </div>
+                            <h4 class="text-gray-600 mb-3">Norsk Gallup KANTAR</h4>
+                            <p class="text-gray-700">Worked as a survey interviewer at Norsk Gallup.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Freelance Graphic Designer -->
+                    <div class="timeline-item pl-12 pb-8">
+                        <div class="timeline-dot absolute left-0 top-0 w-10 h-10 rounded-full gradient-bg flex items-center justify-center">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex flex-wrap justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">Freelance Graphic Designer</h3>
+                                <span class="text-sm bg-blue-100 text-blue-800 py-1 px-3 rounded-full">2020 - 2023</span>
+                            </div>
+                            <h4 class="text-gray-600 mb-3">Self-Employed</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                    <span>Worked independently as a graphic designer for two years</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                    <span>Advertised my work on social media platforms like Instagram and Facebook</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-circle text-xs text-primary mt-1.5 mr-2"></i>
+                                    <span>Developed a client referral system where satisfied customers shared my work</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <button id="show-more-exp" class="text-primary font-medium hover:underline focus:outline-none">
+                        Show More Experience <i class="fas fa-chevron-down ml-1"></i>
+                    </button>
+                </div>
+                
+                <div id="more-experience" class="hidden space-y-8 mt-8">
+                    <!-- Teacher - Al Rahma Center -->
+                    <div class="timeline-item pl-12 pb-8">
+                        <div class="timeline-dot absolute left-0 top-0 w-10 h-10 rounded-full gradient-bg flex items-center justify-center">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex flex-wrap justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">Teacher</h3>
+                                <span class="text-sm bg-blue-100 text-blue-800 py-1 px-3 rounded-full">2023</span>
+                            </div>
+                            <h4 class="text-gray-600 mb-3">Al Rahma Center</h4>
+                            <p class="text-gray-700">Assisted children and youth with homework and general education.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Editor -->
+                    <div class="timeline-item pl-12 pb-8">
+                        <div class="timeline-dot absolute left-0 top-0 w-10 h-10 rounded-full gradient-bg flex items-center justify-center">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex flex-wrap justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">Video Editor & Production</h3>
+                                <span class="text-sm bg-blue-100 text-blue-800 py-1 px-3 rounded-full">2023</span>
+                            </div>
+                            <h4 class="text-gray-600 mb-3">Hadaf Production Company</h4>
+                            <p class="text-gray-700">Worked as a video editor for 3 months.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Graphic Designer -->
+                    <div class="timeline-item pl-12 pb-8">
+                        <div class="timeline-dot absolute left-0 top-0 w-10 h-10 rounded-full gradient-bg flex items-center justify-center">
+                            <i class="fas fa-briefcase text-white"></i>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="flex flex-wrap justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">Graphic Designer</h3>
+                                <span class="text-sm bg-blue-100 text-blue-800 py-1 px-3 rounded-full">2021</span>
+                            </div>
+                            <h4 class="text-gray-600 mb-3">MiCity Graphics Company (Nairobi, Kenya)</h4>
+                            <p class="text-gray-700">Hired as a graphic designer. Worked for two months before the company closed due to financial reasons.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-montserrat">Education & Training</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mt-2"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Software Development -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="gradient-bg p-4 text-white">
+                        <h3 class="text-xl font-semibold">Software Development</h3>
+                        <p>Allcode Now | 2025 - Ongoing</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Studying software development with a hands-on approach to real-world IT skills</p>
+                        <h4 class="font-medium mb-2">Topics covered:</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                <span>Programming with Python and JavaScript</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                <span>Web development (HTML, CSS, React)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                <span>Backend development (Node.js, Express, MongoDB)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                <span>Database management and SQL</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Full Stack Development -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="gradient-bg p-4 text-white">
+                        <h3 class="text-xl font-semibold">Full Stack Development</h3>
+                        <p>Udemy | 2024 - Ongoing</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Studying IT through Udemy, covering comprehensive web development skills</p>
+                        <h4 class="font-medium mb-2">Progress:</h4>
+                        <ul class="space-y-1 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                <span>Frontend Development (Almost completed)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-spinner text-blue-500 mr-2 mt-1"></i>
+                                <span>Database Management (In progress)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-hourglass-start text-gray-500 mr-2 mt-1"></i>
+                                <span>Backend Development (Upcoming)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Formal Education -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden md:col-span-2">
+                    <div class="gradient-bg p-4 text-white">
+                        <h3 class="text-xl font-semibold">Formal Education</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-medium text-lg mb-1">Sudanese International Secondary School Certificate</h4>
+                                <p class="text-gray-600 mb-1">Kajiado, Kenya | 2021 - 2023</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg mb-1">Umma University (Law & Legal Studies)</h4>
+                                <p class="text-gray-600 mb-1">Kenya | Enrolled</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg mb-1">Darul Afaaq Education Center</h4>
+                                <p class="text-gray-600 mb-1">Garissa, Kenya | 2015 - 2020</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg mb-1">Marienlyst School (Reception Class)</h4>
+                                <p class="text-gray-600 mb-1">Oslo, Norway | 2013 - 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-montserrat">My Portfolio</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mt-2"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    A selection of my recent graphic design and development projects.
+                </p>
+            </div>
+            
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                    <button type="button" class="portfolio-filter active px-5 py-2 text-sm font-medium bg-primary text-white rounded-l-lg" data-filter="all">
+                        All
+                    </button>
+                    <button type="button" class="portfolio-filter px-5 py-2 text-sm font-medium bg-white text-gray-700 hover:bg-gray-100" data-filter="design">
+                        Graphic Design
+                    </button>
+                    <button type="button" class="portfolio-filter px-5 py-2 text-sm font-medium bg-white text-gray-700 hover:bg-gray-100 rounded-r-lg" data-filter="development">
+                        Development
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md" data-category="design">
+                    <div class="relative h-64 bg-gray-200">
+                        <svg class="w-full h-full text-gray-300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512">
+                            <path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z"/>
+                        </svg>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="text-lg font-semibold">Brand Identity Design</h3>
+                                <p class="text-sm opacity-80">Logo and branding for a local business</p>
+                            </div>
+                        </div>
+                        <div class="project-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                            <a href="#" class="bg-white text-primary px-4 py-2 rounded-full font-medium hover:bg-gray-100 transition">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md" data-category="development">
+                    <div class="relative h-64 bg-gray-200">
+                        <svg class="w-full h-full text-gray-300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512">
+                            <path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"/>
+                        </svg>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="text-lg font-semibold">E-commerce Website</h3>
+                                <p class="text-sm opacity-80">Frontend development for an online store</p>
+                            </div>
+                        </div>
+                        <div class="project-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                            <a href="#" class="bg-white text-primary px-4 py-2 rounded-full font-medium hover:bg-gray-100 transition">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md" data-category="design">
+                    <div class="relative h-64 bg-gray-200">
+                        <svg class="w-full h-full text-gray-300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512">
+                            <path d="M352 432c0 8.836-7.164 16-16 16H176c-8.836 0-16-7.164-16-16V128H48c-8.836 0-16-7.164-16-16V80c0-8.836 7.164-16 16-16h288c8.836 0 16 7.164 16 16v32c0 8.836-7.164 16-16 16H224v304zm-64-80c35.35 0 64-28.65 64-64s-28.65-64-64-64-64 28.65-64 64 28.65 64 64 64zM592 32H368c-8.836 0-16 7.164-16 16v32c0 8.836 7.164 16 16 16h224c8.836 0 16-7.164 16-16V48c0-8.836-7.164-16-16-16zM368 432h224c8.836 0 16-7.164 16-16v-32c0-8.836-7.164-16-16-16H368c-8.836 0-16 7.164-16 16v32c0 8.836 7.164 16 16 16zm224-128H368c-8.836 0-16 7.164-16 16v32c0 8.836 7.164 16 16 16h224c8.836 0 16-7.164 16-16v-32c0-8.836-7.164-16-16-16zm0-128H368c-8.836 0-16 7.164-16 16v32c0 8.836 7.164 16 16 16h224c8.836 0 16-7.164 16-16v-32c0-8.836-7.164-16-16-16z"/>
+                        </svg>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                            <div class="p-4 text-white">
+                                <h3 class="text-lg font-semibold">Social Media Campaign</h3>
+                                <p class="text-sm opacity-80">Visual assets for marketing campaign</p>
+                            </div>
+                        </div>
+                        <div class="project-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                            <a href="#" class="bg-white text-primary px-4 py-2 rounded-full font-medium hover:bg-gray-100 transition">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-montserrat">Get In Touch</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mt-2"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Feel free to contact me for any work or suggestions.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center mr-4 shrink-0">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="text-gray-600">Tevlingveien 11B , Oslo, Norway</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center mr-4 shrink-0">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">Abdulsaafi1000@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center mr-4 shrink-0">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="text-gray-600">+47 46 399 202</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Follow Me</h3>
+                        <div class="flex space-x-3">
+                            <a href="#" class="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-white hover:opacity-80 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-[#1DA1F2] flex items-center justify-center text-white hover:opacity-80 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-[#E4405F] flex items-center justify-center text-white hover:opacity-80 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-[#0A66C2] flex items-center justify-center text-white hover:opacity-80 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Send Me a Message</h3>
+                    
+                    <form action="https://formspree.io/f/mdkdankz" method="POST" data-formspree  class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" name="name" required class="w-full px-4 py-2 border rounded-md">
+                        </div>
+                    
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" name="email" required class="w-full px-4 py-2 border rounded-md">
+                        </div>
+                    
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" name="subject" required class="w-full px-4 py-2 border rounded-md">
+                        </div>
+                    
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea name="message" rows="4" required class="w-full px-4 py-2 border rounded-md"></textarea>
+                        </div>
+                    
+                        <div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-md font-medium">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                    
+                    
+                    <div id="form-message" class="mt-4 hidden">
+                        <div class="p-4 bg-green-100 text-green-700 rounded-md">
+                            <p>Your message has been sent successfully! I'll get back to you soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-2xl font-bold font-montserrat">ABDULLAHI OMAR</h2>
+                    <p class="text-white/80">Graphic Designer & Full Stack Development Student</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white/80 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="hover:text-white/80 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="hover:text-white/80 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="hover:text-white/80 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-6 pt-6 text-center text-white/80">
+                <p>&copy; 2025 Abdullahi Omar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+ </body>
+</html>
+   
